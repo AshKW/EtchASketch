@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.controlsContainer, .slideContainer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider {
+    width: 100%;
+}
+
+#grid-container {
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+
+}
+
+.grid-row {
+    display: flex;
+}
+
+.pixel {
+    border: 1px solid;
+    border-color: black;
+}
+
+.pixel:hover {
+    background-color: yellow;
+}

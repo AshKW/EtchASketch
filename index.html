@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="etchscript.js" defer></script>
+
+    <div class="controlsContainer">
+      <div class="slideContainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="gridSize">
+      </div>
+      <div class="sizeDisplay">64x64</div>
+      <button id="redrawButton">Redraw</button>
+    </div>
+
+    <div id="grid-container">
+    </div>
+
+  </body>
+</html>
