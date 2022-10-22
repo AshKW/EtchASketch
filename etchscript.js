@@ -6,6 +6,8 @@ let divAdder;
 let selectedColor = "green";
 let slider = document.querySelector("#gridSize");
 let gridSize = slider.value; //number of squares each side
+let gridSizeDisplay = document.querySelector("#gridSizeDisplay")
+
 
 
 /* create a div row, fill with divs then move on to next row */
@@ -32,6 +34,12 @@ function drawGrid(){
     }
 }
 
+//set up slider value display
+gridSizeDisplay.textContent = `${gridSize}x${gridSize}`;
+slider.oninput = function() {
+    gridSize = slider.value;
+    gridSizeDisplay.textContent = `${gridSize}x${gridSize}`;
+} 
 
 //set up remove button
 redrawButton = document.querySelector("#redrawButton");
@@ -43,6 +51,6 @@ function redrawGrid (){
     drawGrid();
 }
 
-//load the initial grid at 64
+//load the initial grid
 drawGrid(gridSize);
 console.log(gridSize);
