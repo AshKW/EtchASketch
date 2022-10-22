@@ -10,15 +10,23 @@
   <body>
     <script src="etchscript.js" defer></script>
 
-    <div class="controlsContainer">
-      <div class="slideContainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="gridSize">
-      </div>
-      <div id="gridSizeDisplay">50x50</div>
-      <button id="redrawButton">Redraw</button>
-    </div>
+    <h1>Etch-A-Sketch</h1>
+    <div class="main">
 
-    <div id="grid-container">
+      <div class="main-split">
+        <div class="controlsContainer">
+          <div class="slideContainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="gridSize">
+          </div>
+          <div id="gridSizeDisplay">50x50</div>
+          <button id="redrawButton">Redraw</button>
+        </div>
+      </div>
+
+      <div class="main-split">
+        <div id="grid-container"></div>
+      </div>
+
     </div>
 
   </body>
